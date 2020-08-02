@@ -44,7 +44,7 @@ app.get('/about',(req, res) => {
 app.get('/help',(req, res) => {
     res.render('help', {
         title: 'HELP',
-        purpose: 'This Page is created to guide the Users',
+        purpose: 'To get the weather, All you have to do is to hover on the Search button, Type in the desired location',
         name: 'Radagast'
     })
 })
