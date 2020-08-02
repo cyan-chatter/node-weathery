@@ -1,0 +1,293 @@
+body{
+    color: #333333;
+    font-family: arial;
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #7fb8da;    
+
+}
+
+.main-content{
+    flex-grow: 1;
+}
+
+footer{
+    color: #888888;
+    border-top: 2px solid #eeeeee;
+    margin-top: 8px;
+    padding : 8px 0;
+    position: relative;
+    text-align: right;
+}
+
+header{
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1{
+    font-size: 60px;
+    margin-bottom: 16px;
+    font-family: BlinkMacSystemFont ;
+}
+
+header a{
+    color: #1d0101b4;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    
+}
+
+.uphead{
+  /*  background-color: #69918885;*/
+    background-image: url(../img/weatherBG.jpg);
+    padding-bottom: 2px;
+    padding-top: 1px;
+    padding-left: 5px;
+    margin-bottom: 1px;
+    border-radius: 4px;
+    text-align: center;
+}
+.bar{
+    background-color: rgb(2, 2, 34);
+    margin-bottom: 1px;
+    margin-top: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    border-radius: 4px;
+    position: sticky;
+    text-align: center;   
+}
+
+
+
+
+.btn{
+    position: relative;
+    margin: 20px;
+    border: 1px solid rgb(2, 2, 34) ;
+    background-color: rgb(173, 197, 218);
+    border-radius: 5px;
+    padding: 2px 6px;
+    overflow: hidden;
+    transition: 1s all ease;
+    
+}
+
+
+
+.btn::before{
+    background: rgba(3, 173, 185, 0.5);
+    content: "";
+    width: 0;
+    height: 0;
+    border-radius: 7px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+    transition: all 0.4s ease;    
+}
+
+.btn:hover::before{
+    height:100%;
+    width: 100%;
+}
+
+
+.portrait{
+
+    width: 250px;
+    height: 250px;
+    border-radius: 2px;
+}
+
+
+input{
+    border: 1px solid #cccccc;
+    padding: 8px;
+
+}
+
+
+.intro-1{
+    text-align: center;
+}
+
+#message-1{
+    color: #382525be;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+#t1{
+    color: #c22323e0;
+    font-family: Haettenschweiler; 
+}
+#t2{
+    color: rgb(223, 82, 26);
+    font-family: 'Arial Narrow Bold';
+}
+
+#t3{
+    color: rgb(223, 177, 26);
+    font-family: sans-serif;
+}
+
+#t4{
+    color: rgba(39, 153, 5, 0.829);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+#t5{
+    color: rgb(6, 153, 133);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#t6{
+    color: rgb(4, 67, 204);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#t7{
+    color: rgb(78, 3, 148);
+    font-family: cursive;
+}
+
+.weather-form{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: #2f3640;
+    height: 60px; /*40*/
+    border-radius: 60px; /*40*/
+    padding: 10px;
+
+}
+
+
+
+.weather-form:hover > .search-txt{
+    width: 560px;
+    padding: 0 6px;
+}
+
+.weather-form:hover > .search-btn{
+   background: #2f3d50;
+
+}
+
+
+.search-btn{
+    cursor: pointer;
+    color: #06e09fde;
+    float: right;
+    width: 60px; /*40*/
+    height: 60px; /*40*/
+    border-radius: 50%;
+    background: #2f3640; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    font-family: 'Arial Narrow Bold';
+    font-size: 16px;
+    font-weight: lighter; 
+}
+
+
+
+.search-txt{
+    border:none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+    /* line-height: 240px; */
+    width: 0px;
+
+}
+
+
+
+/* Font Awesome Kit Code   3d728f724f */
+
+/* Font Awesome API Key
+E3DE2787-7D37-42A9-9CBB-13250C2B499B */
+
+/* button{
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px;
+
+} */
+
+
+
+
+
+
+/* .foot{
+ width : 98%;
+ height: 40px;
+ padding: 1px;
+ border-radius: 35px;
+ background-color: black;
+ color: #ffffff;
+ position: fixed;
+ bottom: 0;
+ text-align: center;
+ margin-left: auto;
+ margin-right: auto; 
+
+}
+
+
+
+.e404{
+    text-align: left;
+    margin-left: auto;
+    color: rgba(31, 3, 3, 0.637);
+    padding: 1 px;
+    font-size: 30px;
+    font-style: normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.e404H{
+    text-align: left;
+    margin-left: auto;
+    color: rgb(4, 36, 51);
+    padding: 1 px;
+    font-size: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+.headerL{
+    font-size: 40px;
+    background-color:white;
+    border-radius: 5px;
+    color: indigo;
+    text-align: center;
+    border-spacing: 30px;
+    border-collapse: separate;
+    margin-left: 3em;
+}
+
+*/
