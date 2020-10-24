@@ -104,7 +104,7 @@ const forecast = (key,callback)=>{
     }
     
 
-
+//exports
 
 module.exports = {
     geocodeFn: geocode,
