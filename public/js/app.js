@@ -9,7 +9,7 @@ wForm.addEventListener('submit', (e)=>{
     const location = search.value
     
     message1.textContent = 'Loading....'
-    
+    //fetches location
     fetch('/weather?location=' + location).then((response)=>{
         response.json().then((data)=>{
             if(data.error){
