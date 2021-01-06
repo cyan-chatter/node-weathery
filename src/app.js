@@ -28,7 +28,7 @@ app.use(express.static(publicDirectoryPath))
 app.get('',(req, res) => {
     res.render('index', {
         title: 'WEATHER',
-        name: 'Radagast'
+        name: 'Sayan Chatterjee'
 
     })
 })
@@ -36,7 +36,7 @@ app.get('/about',(req, res) => {
     res.render('about', {
         title : 'ABOUT',
         heading : 'Weather',
-        name: 'Radagast'
+        name: 'Sayan Chatterjee'
 
     })
 })
@@ -45,7 +45,7 @@ app.get('/help',(req, res) => {
     res.render('help', {
         title: 'HELP',
         purpose: 'To get the weather, All you have to do is to hover on the Search button, Type in the desired location',
-        name: 'Radagast'
+        name: 'Sayan Chatterjee'
     })
 })
 
@@ -94,9 +94,7 @@ util.geocodeFn(lSearcher,(error, location)=>{
         })
     })
 })
-
-
-         
+       
 
 })
 
@@ -105,7 +103,7 @@ app.get('/help/*',(req,res)=>{
     res.render('error404',{
         title: '404',
         message: 'Help Article Not Found',
-        name: 'Radagast'
+        name: 'Sayan Chatterjee'
         
     })
 })
@@ -114,7 +112,7 @@ app.get('*',(req,res)=>{
     res.render('error404',{
         title: '404',
         message: 'Page Not Found',
-        name: 'Radagast' 
+        name: 'Sayan Chatterjee' 
     })
 })
 
